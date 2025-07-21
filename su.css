@@ -1,0 +1,72 @@
+body {
+    background-color: #740406;
+}
+
+header{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.title{
+    font-family: "poppins";
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.comunismo{
+    margin-right: 30px;
+}
+
+.relogio__title{
+    font-family: "poppins";
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-left: 10px;
+    align-items: center;}
+
+.relogio {
+  font-family: "Poppins";
+  color: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.contador-linha {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bloco span {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.label {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.frase {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 300;
+}

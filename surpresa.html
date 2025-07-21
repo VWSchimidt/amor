@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo!</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="su.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title"> EU TE AMO!!</h1>
+        <img src="img/image 1.png" alt="comuna" class="comunismo">
+    </header>
+    <div class="relogio">
+        <h1 class="relogio__title">Já fazem:</h1>
+        <p id="contador"></p>
+    <div class="contador-linha">
+    <div class="bloco"><span id="dias">00</span><div class="label">Dias</div></div>
+    <div class="bloco"><span id="horas">00</span><div class="label">Horas</div></div>
+    <div class="bloco"><span id="minutos">00</span><div class="label">Minutos</div></div>
+    <div class="bloco"><span id="segundos">00</span><div class="label">Segundos</div></div>
+  </div>
+  <p class="frase">Desde a primeira vez que nos vimos!</p>
+    </div>
+    <script>
+  const inicio = new Date("2025-06-29T15:11:00"); // ajuste a data aqui
+
+  function atualizarContador() {
+    const agora = new Date();
+    const diff = agora - inicio;
+
+    const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutos = Math.floor((diff / (1000 * 60)) % 60);
+    const segundos = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("dias").textContent = dias.toString().padStart(2, "0");
+    document.getElementById("horas").textContent = horas.toString().padStart(2, "0");
+    document.getElementById("minutos").textContent = minutos.toString().padStart(2, "0");
+    document.getElementById("segundos").textContent = segundos.toString().padStart(2, "0");
+  }
+
+  atualizarContador();
+  setInterval(atualizarContador, 1000);
+</script>
+</body>
+</html>
