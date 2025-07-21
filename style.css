@@ -11,3 +11,25 @@ h1{
     margin-top: 115px;
     margin-left: 68px;
 }
+
+p{
+    font-family: 'poppins';
+    color: white;
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: 26px;
+    margin-left: 28px;
+}
+
+.botton-oval {
+    display: inline-block;
+    padding: 30px 50px;
+    background-color: #ffffff;
+    color: #740406;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'poppins';
+    font-weight: 100;
+    margin-top: 190px;
+    margin-left:90px;
+}
