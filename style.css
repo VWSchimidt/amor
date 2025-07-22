@@ -1,5 +1,6 @@
 
 body{
+    background-color: #740406;
     background-image: url(img/Group\ 1.png) ;
    background-repeat: no-repeat;
 }
@@ -14,11 +15,11 @@ h1{
 
 p{
     font-family: 'poppins';
-    color: white;
+    color: rgb(189, 184, 184);
     font-weight: 100;
     font-size: 16px;
     margin-top: 26px;
-    margin-left: 28px;
+    margin-left: 12px;
 }
 
 .botton-oval {
@@ -31,5 +32,5 @@ p{
     font-family: 'poppins';
     font-weight: 100;
     margin-top: 190px;
-    margin-left:90px;
+    margin-left:80px;
 }

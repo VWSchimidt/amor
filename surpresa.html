@@ -1,52 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Te Amo!</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="su.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Te Amo!</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="su.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1 class="title"> EU TE AMO!!</h1>
-        <img src="img/image 1.png" alt="comuna" class="comunismo">
-    </header>
-    <div class="relogio">
-        <h1 class="relogio__title">Já fazem:</h1>
-        <p id="contador"></p>
+  <header>
+    <h1 class="title"> EU TE AMO!!</h1>
+    <img src="img/image 1.png" alt="comuna" class="comunismo">
+  </header>
+  <div class="relogio">
+    <h1 class="relogio__title">Já fazem:</h1>
+    <p id="contador"></p>
     <div class="contador-linha">
-    <div class="bloco"><span id="dias">00</span><div class="label">Dias</div></div>
-    <div class="bloco"><span id="horas">00</span><div class="label">Horas</div></div>
-    <div class="bloco"><span id="minutos">00</span><div class="label">Minutos</div></div>
-    <div class="bloco"><span id="segundos">00</span><div class="label">Segundos</div></div>
-  </div>
-  <p class="frase">Desde a primeira vez que nos vimos!</p>
+      <div class="bloco"><span id="dias">00</span>
+        <div class="label">Dias</div>
+      </div>
+      <div class="bloco"><span id="horas">00</span>
+        <div class="label">Horas</div>
+      </div>
+      <div class="bloco"><span id="minutos">00</span>
+        <div class="label">Minutos</div>
+      </div>
+      <div class="bloco"><span id="segundos">00</span>
+        <div class="label">Segundos</div>
+      </div>
     </div>
-    <script>
-  const inicio = new Date("2025-06-29T15:11:00"); // ajuste a data aqui
+    <p class="frase">Desde a primeira vez que nos vimos!</p>
+  </div>
+  <div class="playlist">
 
-  function atualizarContador() {
-    const agora = new Date();
-    const diff = agora - inicio;
+    <iframe data-testid="embed-iframe" style="border-radius:12px"
+      src="https://open.spotify.com/embed/playlist/0HSpDBBeRIexuF10yYy9cw?utm_source=generator" width="90%" height="352"
+      frameBorder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+      class="playlist__a"></iframe>
+    <h1 class="love">Nossas Músicas, Te Amo!!</h1>
+    <iframe data-testid="embed-iframe" style="border-radius:12px"
+      src="https://open.spotify.com/embed/track/0A6SJuOLXzBIVVxzOFdYMK?utm_source=generator" width="80%" height="102"
+      frameBorder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+      class="senamorar"></iframe>
+  </div>
 
-    const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutos = Math.floor((diff / (1000 * 60)) % 60);
-    const segundos = Math.floor((diff / 1000) % 60);
+  <div class="carrossel-quadrado" id="carrossel">
+  <div class="slides">
+    <img src="img/amor.jpg" alt="Foto 1">
+    <img src="img/bb.jpg" alt="Foto 2">
+    <img src="img/nenem.jpg" alt="Foto 3">
+    <img src="img/vd.jpg" alt="Foto 4">
+  </div>
+  <div class="indicadores">
+    <span class="bolinha ativa"></span>
+    <span class="bolinha"></span>
+    <span class="bolinha"></span>
+    <span class="bolinha"></span>
+  </div>
+</div>
+<div>
+  <h1 class="nos">Nós❤️</h1>
+  <p class="vida">Te amo ao quadrado cúbico meu amor!! Quero estar com você todos os dias e prometo nunca te deixar, prometa nunca me deixar também!
+Nunca amei ninguém assim antes, você é toda a complexidade dos meus sentimentos, adoro estar com você, eu amo amar você lelê!!</p>
+</div>
 
-    document.getElementById("dias").textContent = dias.toString().padStart(2, "0");
-    document.getElementById("horas").textContent = horas.toString().padStart(2, "0");
-    document.getElementById("minutos").textContent = minutos.toString().padStart(2, "0");
-    document.getElementById("segundos").textContent = segundos.toString().padStart(2, "0");
+  <script>
+    const inicio = new Date("2025-06-29T15:11:00"); // ajuste a data aqui
+
+    function atualizarContador() {
+      const agora = new Date();
+      const diff = agora - inicio;
+
+      const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutos = Math.floor((diff / (1000 * 60)) % 60);
+      const segundos = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("dias").textContent = dias.toString().padStart(2, "0");
+      document.getElementById("horas").textContent = horas.toString().padStart(2, "0");
+      document.getElementById("minutos").textContent = minutos.toString().padStart(2, "0");
+      document.getElementById("segundos").textContent = segundos.toString().padStart(2, "0");
+    }
+
+    atualizarContador();
+    setInterval(atualizarContador, 1000);
+  </script>
+  <script>
+  const slides = document.querySelector("#carrossel .slides");
+  const bolinhas = document.querySelectorAll(".bolinha");
+  let index = 0;
+
+  function atualizarBolinhas(i) {
+    bolinhas.forEach((b, idx) => {
+      b.classList.toggle("ativa", idx === i);
+    });
   }
 
-  atualizarContador();
-  setInterval(atualizarContador, 1000);
+  function passarSlide() {
+    index = (index + 1) % slides.children.length;
+    const largura = slides.children[0].clientWidth;
+
+    slides.scrollTo({
+      left: index * largura,
+      behavior: "smooth"
+    });
+
+    atualizarBolinhas(index);
+  }
+
+  // Troca automática
+  setInterval(passarSlide, 5000);
+
+  // Troca bolinhas ao rolar com o dedo
+  slides.addEventListener("scroll", () => {
+    const largura = slides.children[0].clientWidth;
+    const novoIndex = Math.round(slides.scrollLeft / largura);
+    if (novoIndex !== index) {
+      index = novoIndex;
+      atualizarBolinhas(index);
+    }
+  });
 </script>
 </body>
+
 </html>

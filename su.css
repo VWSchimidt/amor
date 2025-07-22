@@ -55,7 +55,7 @@ header{
 }
 
 .bloco span {
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 900;
 }
 
@@ -69,4 +69,92 @@ header{
   margin-top: 30px;
   font-size: 16px;
   font-weight: 300;
+}
+
+.playlist__a{
+    margin-left: 20px;
+    margin-top: 80px;
+}
+
+.love{
+  font-family: "poppins";
+  font-size: 26px;
+  font-weight: 50;
+  color: white;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.senamorar{
+  margin-left: 42px;
+  margin-top: 40px;
+}
+
+
+.carrossel-quadrado {
+  width: 100%;
+  max-width: 375px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: #800000;
+  padding-bottom: 20px;
+}
+
+.carrossel-quadrado .slides {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carrossel-quadrado .slides img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 20px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.indicadores {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.bolinha {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.bolinha.ativa {
+  opacity: 1;
+  background-color: #fff;
+  box-shadow: 0 0 5px #fff;
+}
+
+.nos{
+  font-family: 'poppins';
+  font-size: 20px;
+  color: white;
+  margin-left: 180px;
+  margin-top: 40px;
+}
+
+
+.vida{
+  font-family: 'poppins';
+  font-size: 16px;
+  color: rgb(190, 190, 190);
+  text-align: center;
+  margin: 40px ;
 }
